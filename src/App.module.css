@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(225,225,225);
+    margin:0;
+    padding:0;
+}
+.loading_div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    /*background-color: black;*/
+    /*color: white;*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 0;
+}
+
+@media (max-width: 770px){
+    .container{
+        margin:0 10%;
+    }
+}

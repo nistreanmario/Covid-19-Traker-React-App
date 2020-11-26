@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+.footer_inner{
+    margin: 20px;
+    color: whitesmoke;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 14px;
+}

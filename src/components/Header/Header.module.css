@@ -1,0 +1,15 @@
+.containerr{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(40,40,40);
+    color:white;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+@media (max-width: 770px){
+    .containerr{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
