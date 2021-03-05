@@ -3,9 +3,11 @@
     justify-content: center;
     width: 100%;
     background-color: black;
+    position: fixed;
+    bottom: 0;
 }
 .footer_inner{
-    margin: 20px;
+    margin: 10px;
     color: whitesmoke;
     font-family: 'Sansita Swashed', cursive;
     font-size: 14px;

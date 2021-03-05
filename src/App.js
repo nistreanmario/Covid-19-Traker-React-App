@@ -1,39 +1,25 @@
 import React from 'react'
-import {Header, Footer, Cards, Chart, CountryPicker} from './components'
 import styles from './App.module.css';
-import {fetchData} from './api';
-
+import HomePage from "./components/pages/HomePage/HomePage";
+import AboutPage from "./components/pages/AboutPage/AboutPage";
+import {Footer, Header} from "./components";
+import { BrowserRouter, Route} from "react-router-dom";
 
 
 class App extends React.Component{
-    state = {
-        data: {},
-        country: '',
-    }
-
-    async componentDidMount() {
-        const fetchedData = await fetchData();
-        this.setState({data: fetchedData});
-    }
-
-    handleCountryChange = async (country) => {
-        const fetchedData = await fetchData(country);
-
-        this.setState({data: fetchedData, country: country})
-    }
 
     render(){
-        const { data, country } = this.state;
-    return(
-        <div className={styles.container}>
-            <Header />
-            <CountryPicker handleCountryChange={this.handleCountryChange} />
-            <Cards data={data} />
-            <Chart data={data} country={country} />
-            <Footer />
-        </div>
-    )
-  }
+        return(
+            <BrowserRouter>
+                <div className={styles.container}>
+                    <Header />
+                        <Route exact path='/' component={HomePage} />
+                        <Route path='/About' component={AboutPage} />
+                    <Footer />
+                </div>
+            </BrowserRouter>
+        )
+    }
 }
 
 export default App;
