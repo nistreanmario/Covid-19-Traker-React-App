@@ -1,3 +1,6 @@
+.right {
+    float: right;
+}
 /*nav{*/
 /*    display: flex;*/
 /*    justify-content: center;*/
@@ -22,12 +25,8 @@
 
 
 
-/*@media (max-width: 770px){*/
-/*    nav{*/
-/*        border-bottom-left-radius: 15px;*/
-/*        border-bottom-right-radius: 15px;*/
-/*    }*/
-/*    nav ul{*/
-/*        width: 60%;*/
-/*    }*/
-/*}*/
+@media (max-width: 770px){
+    .right{
+        display: none !important;
+    }
+}
